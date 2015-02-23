@@ -342,6 +342,9 @@ public class interfaz extends javax.swing.JFrame {
                 case INT:
                     resultado=resultado+ "< " + lexer.lexeme + "> ";
                     break;
+                case CHARVALUE:
+                    resultado=resultado+ "< " + lexer.lexeme + "> ";
+                    break;
                 default:
                     resultado=resultado+ "<"+ lexer.lexeme + "> ";
             }

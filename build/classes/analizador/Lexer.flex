@@ -11,12 +11,14 @@ import static analizador.Token.*;
 
 L = [a-zA-Z_]
 D = [0-9]
+ 
 WHITE=[ \t\r\n]
 %{
 public String lexeme;
 %}
 %%
 {WHITE} {/*Ignore*/}
+\'[a-zA-z0-9]\' {lexeme=yytext(); return CHARVALUE;}
 "return" {return RETURN;}
 ">=" {return GREATEROREQUALTHAN;}
 "<=" {return LESSOREQUALTHAN;}
@@ -42,7 +44,7 @@ public String lexeme;
 "for" {return FOR;}
 "endfor" {return ENDFOR;}
 "while" {return WHILE;}
-"endfhile" {return ENDWHILE;}
+"endwhile" {return ENDWHILE;}
 "select" {return SELECT;}
 "endselect" {return ENDSELECT;}
 "option" {return OPTION;}
@@ -56,4 +58,4 @@ public String lexeme;
 {L}({L}|{D})* {lexeme=yytext(); return ID;}
 ("(-"{D}+")")|{D}+ {lexeme=yytext(); return INT;}
 
-. {return ERROR;}
+. {System.out.println("error, line: " + yyline + "column: " + yycolumn) ;return ERROR;}
