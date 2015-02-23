@@ -1,8 +1,13 @@
 package analizador;
 import static analizador.Token.*;
 %%
+
 %class Lexer
 %type Token
+%ignorecase
+%unicode
+%column
+%line
 
 L = [a-zA-Z_]
 D = [0-9]
