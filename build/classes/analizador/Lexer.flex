@@ -19,6 +19,9 @@ public String lexeme;
 {WHITE} {/*Ignore*/}
 ">=" {return GREATEROREQUALTHAN;}
 "<=" {return LESSOREQUALTHAN;}
+"and" {return AND;}
+"or" {return OR;}
+"xor" {return XOR;}
 "=/=" {return NOTEQUAL;}
 "==" {return EQUALS;}
 "=" {return ASSIGN;}
