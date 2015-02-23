@@ -274,7 +274,7 @@ public class interfaz extends javax.swing.JFrame {
                     resultado=resultado+ "<enddefault>";
                     break; 
                 case LTERMINATOR:
-                    resultado=resultado+ "<;>";
+                    resultado=resultado+ "<;>\n";
                     break;
                 case SCOMMENT:
                     resultado=resultado+ "<//>";
