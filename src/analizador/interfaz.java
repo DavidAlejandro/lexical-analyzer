@@ -325,7 +325,7 @@ public class interfaz extends javax.swing.JFrame {
                     resultado=resultado+ "<xor>";
                     break;
                 case ERROR:
-                    resultado=resultado+ "Error, simbolo no reconocido ";
+                    resultado=resultado+ "Error, not a valid token";
                     break;
                 case ID: {
                     contIDs++;

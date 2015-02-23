@@ -17,6 +17,7 @@ public String lexeme;
 %}
 %%
 {WHITE} {/*Ignore*/}
+"return" {return RETURN;}
 ">=" {return GREATEROREQUALTHAN;}
 "<=" {return LESSOREQUALTHAN;}
 "and" {return AND;}
