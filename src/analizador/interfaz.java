@@ -287,7 +287,31 @@ public class interfaz extends javax.swing.JFrame {
                     break;
                 case ENDIF:
                     resultado=resultado+ "<endif>";
-                    break;    
+                    break;
+                case GREATEROREQUALTHAN:
+                    resultado=resultado+ "<<=>";
+                    break;
+                case LESSOREQUALTHAN:
+                    resultado=resultado+ "<>=>";
+                    break;
+                case NOTEQUAL:
+                    resultado=resultado+ "<=/=>";
+                    break;
+                case GREATERTHAN:
+                    resultado=resultado+ "<>>";
+                    break;
+                case LESSTHAN:
+                    resultado=resultado+ "<>>";
+                    break;
+                case AND:
+                    resultado=resultado+ "<and>";
+                    break;
+                case OR:
+                    resultado=resultado+ "<or>";
+                    break;
+                case XOR:
+                    resultado=resultado+ "<xor>";
+                    break;
                 case ERROR:
                     resultado=resultado+ "Error, simbolo no reconocido ";
                     break;
