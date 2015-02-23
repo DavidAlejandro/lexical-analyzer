@@ -324,6 +324,9 @@ public class interfaz extends javax.swing.JFrame {
                 case XOR:
                     resultado=resultado+ "<xor>";
                     break;
+                case RETURN:
+                    resultado=resultado+ "<return>";
+                    break;
                 case ERROR:
                     resultado=resultado+ "Error, not a valid token";
                     break;

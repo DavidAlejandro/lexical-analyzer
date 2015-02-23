@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 a = 4 if
+=======
+int a;
+bool b;
+>>>>>>> 895a72cec32a95504f3cbb2268eb7c18809501da
