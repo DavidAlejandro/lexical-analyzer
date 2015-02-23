@@ -216,6 +216,114 @@ public class interfaz extends javax.swing.JFrame {
                 case ASSIGN:
                     resultado=resultado+ "<=>";
                     break;
+                case THEN:
+                    resultado=resultado+ "<then>";
+                    break;
+                case ELSE:
+                    resultado=resultado+ "<else>";
+                    break;
+                case BOOL:
+                    resultado=resultado+ "<bool>";
+                    break;
+                case DOUBLE:
+                    resultado=resultado+ "<double>";
+                    break;
+                case CHAR:
+                    resultado=resultado+ "<char>";
+                    break;
+                case EQUALS:
+                    resultado=resultado+ "<==>";
+                    break;
+                case ELSEIF:
+                    resultado=resultado+ "<elseif>";
+                    break;
+                case CAST:
+                    resultado=resultado+ "<cast>";
+                    break;
+                case ENDCAST:
+                    resultado=resultado+ "<endcast>";
+                    break;
+                case FOR:
+                    resultado=resultado+ "<for>";
+                    break;
+                case ENDFOR:
+                    resultado=resultado+ "<endfor>";
+                    break;
+                case WHILE:
+                    resultado=resultado+ "<while>";
+                    break;
+                case ENDWHILE:
+                    resultado=resultado+ "<endwhile>";
+                    break;
+                case SELECT:
+                    resultado=resultado+ "<select>";
+                    break;
+                case ENDSELECT:
+                    resultado=resultado+ "<endselect>";
+                    break;
+                case OPTION:
+                    resultado=resultado+ "<option>";
+                    break;
+                case ENDOPTION:
+                    resultado=resultado+ "<endoption>";
+                    break;
+                case DEFAULT:
+                    resultado=resultado+ "<default>";
+                    break;
+                case ENDDEFAULT:
+                    resultado=resultado+ "<enddefault>";
+                    break; 
+                case LTERMINATOR:
+                    resultado=resultado+ "<;>";
+                    break;
+                case SCOMMENT:
+                    resultado=resultado+ "<//>";
+                    break;
+                case MCOMMENT:
+                    resultado=resultado+ "</*>";
+                    break;    
+                case ENDMCOMMENT:
+                    resultado=resultado+ "<*/>";
+                    break;
+                case RPAR:
+                    resultado=resultado+ "<(>";
+                    break;
+                case LPAR:
+                    resultado=resultado+ "<)>";
+                    break;
+                case SUMMON:
+                    resultado=resultado+ "<summon>";
+                    break;
+                case ENDSUMMON:
+                    resultado=resultado+ "<endsummon>";
+                    break;
+                case ENDIF:
+                    resultado=resultado+ "<endif>";
+                    break;
+                case GREATEROREQUALTHAN:
+                    resultado=resultado+ "<<=>";
+                    break;
+                case LESSOREQUALTHAN:
+                    resultado=resultado+ "<>=>";
+                    break;
+                case NOTEQUAL:
+                    resultado=resultado+ "<=/=>";
+                    break;
+                case GREATERTHAN:
+                    resultado=resultado+ "<>>";
+                    break;
+                case LESSTHAN:
+                    resultado=resultado+ "<>>";
+                    break;
+                case AND:
+                    resultado=resultado+ "<and>";
+                    break;
+                case OR:
+                    resultado=resultado+ "<or>";
+                    break;
+                case XOR:
+                    resultado=resultado+ "<xor>";
+                    break;
                 case ERROR:
                     resultado=resultado+ "Error, simbolo no reconocido ";
                     break;
