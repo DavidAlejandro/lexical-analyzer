@@ -198,6 +198,9 @@ public class interfaz extends javax.swing.JFrame {
                 case DIV:
                     resultado=resultado+ "</>";
                     break;
+                case IF:
+                    resultado=resultado+ "<if>";
+                    break;
                 case ASSIGN:
                     resultado=resultado+ "<=>";
                     break;
