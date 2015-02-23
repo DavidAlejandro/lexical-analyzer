@@ -17,14 +17,17 @@ public String lexeme;
 %}
 %%
 {WHITE} {/*Ignore*/}
+">=" {return GREATEROREQUALTHAN;}
+"<=" {return LESSOREQUALTHAN;}
+"=/=" {return NOTEQUAL;}
 "==" {return EQUALS;}
 "=" {return ASSIGN;}
 "+" {return SUMA;}
 "*" {return MULT;}
 "-" {return RESTA;}
 "/" {return DIV;}
-{L}({L}|{D})* {lexeme=yytext(); return ID;}
- ("(-"{D}+")")|{D}+ {lexeme=yytext(); return INT;}
+">" {return GREATERTHAN;}
+"<" {return LESSTHAN;}
 "if" {return IF;}
 "then" {return THEN;}
 "else" {return ELSE;}
@@ -46,5 +49,7 @@ public String lexeme;
 "//" {return SCOMMENT;}
 "/*" {return MCOMMENT;}
 "*/" {return ENDMCOMMENT;}
+{L}({L}|{D})* {lexeme=yytext(); return ID;}
+("(-"{D}+")")|{D}+ {lexeme=yytext(); return INT;}
 
 . {return ERROR;}
